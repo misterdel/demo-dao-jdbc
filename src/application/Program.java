@@ -2,6 +2,7 @@ package application;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
+import model.entities.Seller;
 
 public class Program {
 
@@ -15,6 +16,9 @@ public class Program {
 */
 		
 		SellerDao sellerDao = DaoFactory.creatSellerDao();
+		Seller seller = sellerDao.findById(3);
+		System.out.println(seller.toString());
+
 	}
 
 }
