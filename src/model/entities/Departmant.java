@@ -53,7 +53,7 @@ public class Departmant implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Departmant [id=" + id + ", name=" + name + "]";
+		return "\nId: " + id + "\nName: " + name;
 	}
 
 }
