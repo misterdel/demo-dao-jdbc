@@ -16,7 +16,7 @@ public class Program {
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller.toString());
 */
-		
+		/**
 		System.out.println("=== TEST 2: seller findByDepartament ===");		
 		SellerDao sellerDao2 = DaoFactory.creatSellerDao();
 		Departmant dep = new Departmant(2, null);
@@ -26,7 +26,16 @@ public class Program {
 		for (Seller seller2 : sellers) {
 			System.out.println(seller2.toString());
 		}
+		*/
 		
+		System.out.println("=== TEST 3: seller findAll ===");		
+		SellerDao sellerDao2 = DaoFactory.creatSellerDao();
+		
+		List<Seller> sellers= sellerDao2.findAll();
+
+		for (Seller seller2 : sellers) {
+			System.out.println(seller2.toString());
+		}
 		
 		
 		
